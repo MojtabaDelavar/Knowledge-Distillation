@@ -1,0 +1,22 @@
+!pip install git+https://github.com/miguelvr/dropblock.git#egg=dropblock
+import os
+from PIL import Image
+import torch
+import torchvision
+import os
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from torchvision.transforms import transforms
+from sklearn.model_selection import train_test_split
+import torch.nn as nn
+from torch.utils.data import Subset
+from sklearn.model_selection import train_test_split
+from torch.utils.data import DataLoader
+import time
+from tqdm.notebook import trange, tqdm
+from torchsummary import summary
+import torch.nn.functional as F
+from sklearn import metrics
+from torch.utils.tensorboard import SummaryWriter
+from dropblock import DropBlock2D
